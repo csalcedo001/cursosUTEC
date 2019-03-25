@@ -16,3 +16,21 @@ Memoria de mayor jerarquía tiene menor tiempo de acceso.
 ## SRAM
 
 Memoria volatil
+
+## Cache
+
+* Mapeo Directo
+* Mapeo Indirecto
+
+### Medidas de Desempeño
+
+Average Memory Access Time (AMAT)
+
+## Memoria Virtual
+
+* Utilizar la memoria principal como cache.
+
+## Memoria Principal
+
+* Contiene direcciones físicas.
+* Es _byte addressable_.
