@@ -1,4 +1,4 @@
-#Sistema Operativo
+# Sistema Operativo
 
 Software que permite correr software sobre un hardware. Da acceso a sus recursos.\
 
@@ -21,3 +21,12 @@ En palabras de [...]:
 - Multiprograming OS/360: Antes de este computador, cada computadora tenía un sistema limitado y diferente. El OS/360 utilizó un sistema operativo que podía utilizarse en computadores de sus siguientes versiones.
 - Computadoras personales
 - Computadoras móviles
+
+## Tipos de OS
+
+* Multi purpose
+* Real Time
+* Sistemas Distribuidos: Multiples sistemas operativos conectados por _middleware_.
+* Timesharing
+* Moviles
+
