@@ -35,3 +35,37 @@ En palabras de [...]:
     * Multi-tasking
     * Multi-user
     * Time sharing
+
+
+## ¿Por qué UNIX?
+
+* Distribución en universides.
+* ...
+
+## GNU Project
+
+En respuesta a restricciones puestas en UNIX.
+
+## Linux
+
+Surgió como un hobby. Ahora es el sistema operativo más utilizado a nivel mundial (en computadoras y celulares).
+
+* UNIX-like
+
+## Unix ahora
+
+Se puede encontrar en MacOS, AIX, entre otros.
+
+## ¿Por qué Linux?
+
+* Libre
+* Open Source
+* Puede modificarse
+* Robusto, seguro y escalable
+* Amplia comunidad
+* Servidoresy redes
+* Puede encontrarse en muchas computadoras (TVs, Autos, Smartphones, Sistemas embebidos)
+
+### En la Academia
+
+* Utilizado para investigación, ya que se tienen bajos recursos económicos.
