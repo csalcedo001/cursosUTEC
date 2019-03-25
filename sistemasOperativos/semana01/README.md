@@ -1,0 +1,20 @@
+#Sistema Operativo
+
+Software que permite correr software sobre un hardware. Da acceso a sus recursos.\
+
+## ¿Qué es un sistema operativo?
+
+En palabras de [...]:
+
+> Es un sistema que maneja recursos de hardware
+
+## ¿Qué hace?
+
+1. Presenta al usuario una abstracción sobre una computadora.
+   Hace que se vea menos complejo, más bonito.
+2. Administrador de recursos.
+
+## Historia
+
+- Tubos catódicos (ENIAC)
+- Batch Systems: Hojas de carton 
