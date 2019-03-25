@@ -1,11 +1,11 @@
 # Ingeniería de Software
 ## CS2901
 
-### Details
+### Detalles
 
 **Ciclo:** 2019-1\
 **Profesores:** Jesús Bellido & Yamilet Serrano
 
-### Requirements
+### Requerimientos
 
 Java v8
