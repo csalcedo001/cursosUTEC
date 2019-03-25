@@ -18,3 +18,6 @@ En palabras de [...]:
 
 - Tubos catódicos (ENIAC)
 - Batch Systems: Hojas de carton 
+- Multiprograming OS/360: Antes de este computador, cada computadora tenía un sistema limitado y diferente. El OS/360 utilizó un sistema operativo que podía utilizarse en computadores de sus siguientes versiones.
+- Computadoras personales
+- Computadoras móviles
