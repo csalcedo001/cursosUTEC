@@ -29,4 +29,9 @@ En palabras de [...]:
 * Sistemas Distribuidos: Multiples sistemas operativos conectados por _middleware_.
 * Timesharing
 * Moviles
-
+* Unix
+  * Ventajas
+    * Portable
+    * Multi-tasking
+    * Multi-user
+    * Time sharing
