@@ -9,6 +9,6 @@
 ## Requerimientos
 
 ### Libros 
--Modern OperationgSystems – Tanembaum
--Operating Systems Concepts – Silberchatz
--Computer Systems: A programmers prerspective
+- Modern OperationgSystems – Tanembaum
+- Operating Systems Concepts – Silberchatz
+- Computer Systems: A programmers prerspective
