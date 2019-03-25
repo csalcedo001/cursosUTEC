@@ -34,3 +34,7 @@ Average Memory Access Time (AMAT)
 
 * Contiene direcciones físicas.
 * Es _byte addressable_.
+
+## Paging
+
+Page tables
