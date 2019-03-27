@@ -1,6 +1,6 @@
 # Insertion Sort
 
-'''
+```
 for j = 2 to n do
 	key = A[j]
 	i = j - 1
@@ -10,4 +10,4 @@ for j = 2 to n do
 	end while
 	A[i + 1] = key
 end for
-'''
+```
