@@ -14,19 +14,29 @@ class Aula {
 	public:
 	Aula(std::string s) : filename{} {
 		strcpy(filename, s.c_str());
-		
+	}
+	
+	private:
+	void read(int size, char *container) {
 		std::ifstream file(filename);
 		
-		char l[16] = {};
-		
-		file.read(l, 15);
-		
-		std::cout << l << std::endl;
+		file.read(container, size);
 		
 		file.close();
 	}
 	
-	Alumno* load();
+	public:
+	void load() {
+		int size = 15;
+		
+		char s[size + 1];
+		s[size] = 0;
+		
+		this->read(size, s);
+		
+		std::cout << s << std::endl;
+	}
+	
 	bool add(Alumno a);
 	bool del(int pos);
 };

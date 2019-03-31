@@ -9,7 +9,7 @@ using namespace std;
 int main (void) {
 	Aula aula("datos.txt");
 	
-	
+	aula.load();
 	
 	return 0;
 }
