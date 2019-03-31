@@ -17,5 +17,7 @@ int main (void) {
 		std::cout << a.carrera << std::endl;
 	}
 	
+	aula.add(alumnos[0]);
+	
 	return 0;
 }

@@ -18,12 +18,11 @@ class Aula {
 		strcpy(this->filename, s.c_str());
 	}
 	
-	public:
 	int size() const {
 		std::ifstream file(this->filename);
 		
 		file.seekg(0, std::ios::end);
-		int fileSize = file.tellg() / (RSIZE + 1);
+		int fileSize = file.tellg() / (RSIZE + 2);
 		
 		file.close();
 		
@@ -42,10 +41,10 @@ class Aula {
 		do {
 			Alumno a;
 			
-			file.read(a.nombre, 12);
-			file.read(a.apPaterno, 12);
-			file.read(a.apMaterno, 12);
-			file.read(a.carrera, 15);
+			file.read(a.nombre, NSIZE);
+			file.read(a.apPaterno, NSIZE);
+			file.read(a.apMaterno, NSIZE);
+			file.read(a.carrera, MSIZE);
 			file.seekg(2, std::ios::cur);
 			
 			alumnos.push_back(a);
@@ -57,13 +56,15 @@ class Aula {
 	}
 	
 	bool add(Alumno a) {
-		std::ofstream file(filename, std::ios::out | std::ios::ate);
-		
+		std::fstream file(filename);
+			
 		if (!file.is_open()) {
 			return false;
 		}
 		
 		// Write Alumno...
+		
+		std::cout << strlen(a.apPaterno) << std::endl;
 		
 		file.close();
 		
