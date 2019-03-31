@@ -12,12 +12,10 @@
 
 class Aula {
 	char filename[FNSIZE + 1];
-	// std::fstream file;
 	
 	public:
 	Aula(std::string s) : filename{} {
 		strcpy(this->filename, s.c_str());
-		// this->file.open(this->filename, std::ios::in| std::ios::out);
 	}
 	
 	public:
@@ -58,7 +56,19 @@ class Aula {
 		return alumnos;
 	}
 	
-	bool add(Alumno a);
+	bool add(Alumno a) {
+		std::ofstream file(filename, std::ios::out | std::ios::ate);
+		
+		if (!file.is_open()) {
+			return false;
+		}
+		
+		// Write Alumno...
+		
+		file.close();
+		
+		return true;
+	}
 	bool del(int pos);
 };
 
