@@ -1,11 +1,14 @@
 #ifndef ALUMNO
 #define ALUMNO
 
+#define NSIZE 12 // Name size
+#define MSIZE 15 // Major size
+
 typedef struct Alumno {
-	char nombre[32];
-	char apPaterno[32];
-	char apMaterno[32];
-	char carrera[15];
+	char nombre[NSIZE + 1];
+	char apPaterno[NSIZE + 1];
+	char apMaterno[NSIZE + 1];
+	char carrera[MSIZE + 1];
 } Alumno;
 
 #endif
