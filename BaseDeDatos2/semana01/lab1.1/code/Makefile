@@ -5,3 +5,6 @@ p1.o: p1.cpp alumno.h aula.h
 
 run: p1.o
 	./$<
+
+clean:
+	rm *.o

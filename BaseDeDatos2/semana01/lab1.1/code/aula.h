@@ -32,42 +32,30 @@ class Aula {
 		return fileSize;
 	}
 	
-	void load() {
+	std::vector<Alumno> load() {
 		std::ifstream file(filename);
 		
 		int size = this->size();
 		
-		Alumno a[size];
+		std::vector<Alumno> alumnos;
 		
 		int pos = 0;
 		
 		do {
-			file.read(a[pos].nombre, 12);
-			file.read(a[pos].apPaterno, 12);
-			file.read(a[pos].apMaterno, 12);
-			file.read(a[pos].carrera, 15);
+			Alumno a;
+			
+			file.read(a.nombre, 12);
+			file.read(a.apPaterno, 12);
+			file.read(a.apMaterno, 12);
+			file.read(a.carrera, 15);
 			file.seekg(2, std::ios::cur);
 			
-			++pos;
-		} while (pos < size);
-		
-		std::cout << a[0].nombre << std::endl;
-		std::cout << a[0].apPaterno << std::endl;
-		std::cout << a[0].apMaterno << std::endl;
-		std::cout << a[0].carrera << std::endl;
-		
-		std::cout << a[1].nombre << std::endl;
-		std::cout << a[1].apPaterno << std::endl;
-		std::cout << a[1].apMaterno << std::endl;
-		std::cout << a[1].carrera << std::endl;
-		
-		std::cout << a[2].nombre << std::endl;
-		std::cout << a[2].apPaterno << std::endl;
-		std::cout << a[2].apMaterno << std::endl;
-		std::cout << a[2].carrera << std::endl;
-		
+			alumnos.push_back(a);
+		} while (++pos < size);
 		
 		file.close();
+		
+		return alumnos;
 	}
 	
 	bool add(Alumno a);

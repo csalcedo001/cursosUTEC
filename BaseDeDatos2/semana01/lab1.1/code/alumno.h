@@ -27,7 +27,7 @@ typedef struct Alumno {
 		// strcpy(this->carrera, carrera.c_str());
 	}
 	
-	Alumno(Alumno& a) {
+	Alumno(const Alumno& a) {
 		strcpy(this->nombre, a.nombre);
 		strcpy(this->apPaterno, a.apPaterno);
 		strcpy(this->apMaterno, a.apMaterno);
