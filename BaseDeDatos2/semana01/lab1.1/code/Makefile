@@ -6,5 +6,8 @@ p1.o: p1.cpp alumno.h aula.h functions.h
 run: p1.o
 	./$<
 
-clean:
+clean: reset
 	rm *.o
+
+reset:
+	cp datos.txt copiaDatos.txt
