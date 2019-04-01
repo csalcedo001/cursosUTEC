@@ -8,7 +8,7 @@
 #include "alumno.h"
 
 #define FNSIZE 100 // Filename size
-#define RSIZE 51 // Register size
+#define RSIZE 60 // Register size
 
 class Aula {
 	char filename[FNSIZE + 1];
@@ -73,6 +73,9 @@ class Aula {
 		file.write(a.apPaterno, NSIZE);
 		file.write(a.apMaterno, NSIZE);
 		file.write(a.carrera, MSIZE);
+		file.write((const char*)& a.ciclo, sizeof(int));
+		file.write((const char*)& a.mensualidad, sizeof(float));
+		file.write((const char*)& a, sizeof(a));
 		file.put('\n');
 		
 		file.close();

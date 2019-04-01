@@ -7,27 +7,27 @@
 #define MSIZE 15 // Major size
 
 typedef struct Alumno {
-	char nombre[NSIZE + 1];
-	char apPaterno[NSIZE + 1];
-	char apMaterno[NSIZE + 1];
-	char carrera[MSIZE + 1];
+	char nombre[NSIZE];
+	char apPaterno[NSIZE];
+	char apMaterno[NSIZE];
+	char carrera[MSIZE];
 	int ciclo;
 	float mensualidad;
 	
 	Alumno() :
-		nombre{},
-		apPaterno{},
-		apMaterno{},
-		carrera{},
+		nombre{' '},
+		apPaterno{' '},
+		apMaterno{' '},
+		carrera{' '},
 		ciclo(0),
 		mensualidad(0)
 	{}
 		
 	Alumno(const Alumno& a) :
-		nombre{},
-		apPaterno{},
-		apMaterno{},
-		carrera{},
+		nombre{' '},
+		apPaterno{' '},
+		apMaterno{' '},
+		carrera{' '},
 		ciclo(0),
 		mensualidad(0)
 	{
@@ -46,7 +46,7 @@ typedef struct Alumno {
 		std::string apMaterno,
 		std::string carrera,
 		int ciclo,
-		float mensualidad,
+		float mensualidad
 	) {
 		memset(this->nombre, ' ', NSIZE);
 		memset(this->apPaterno, ' ', NSIZE);
