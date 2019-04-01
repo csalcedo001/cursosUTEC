@@ -11,31 +11,42 @@ typedef struct Alumno {
 	char apPaterno[NSIZE + 1];
 	char apMaterno[NSIZE + 1];
 	char carrera[MSIZE + 1];
+	int ciclo;
+	float mensualidad;
 	
 	Alumno() :
 		nombre{},
 		apPaterno{},
 		apMaterno{},
-		carrera{}
+		carrera{},
+		ciclo(0),
+		mensualidad(0)
 	{}
 		
 	Alumno(const Alumno& a) :
 		nombre{},
 		apPaterno{},
 		apMaterno{},
-		carrera{}
+		carrera{},
+		ciclo(0),
+		mensualidad(0)
 	{
 		strcpy(this->nombre, a.nombre);
 		strcpy(this->apPaterno, a.apPaterno);
 		strcpy(this->apMaterno, a.apMaterno);
 		strcpy(this->carrera, a.carrera);
+		
+		this->ciclo = a.ciclo;
+		this->mensualidad = a.mensualidad;
 	}
 	
 	void update(
 		std::string nombre,
 		std::string apPaterno,
 		std::string apMaterno,
-		std::string carrera
+		std::string carrera,
+		int ciclo,
+		float mensualidad,
 	) {
 		memset(this->nombre, ' ', NSIZE);
 		memset(this->apPaterno, ' ', NSIZE);
@@ -46,6 +57,9 @@ typedef struct Alumno {
 		strcpy(this->apPaterno, apPaterno.c_str());
 		strcpy(this->apMaterno, apMaterno.c_str());
 		strcpy(this->carrera, carrera.c_str());
+		
+		this->ciclo = ciclo;
+		this->mensualidad = mensualidad;
 	}
 } Alumno;
 

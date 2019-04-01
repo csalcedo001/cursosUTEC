@@ -1,9 +1,9 @@
 all: run
 
-p1.o: p1.cpp alumno.h aula.h functions.h
+p2.o: p2.cpp alumno.h aula.h functions.h
 	g++ -std=c++17 $< -o $@
 
-run: p1.o
+run: p2.o
 	./$<
 
 clean: reset
