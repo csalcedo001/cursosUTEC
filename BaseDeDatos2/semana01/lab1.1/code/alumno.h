@@ -30,6 +30,23 @@ typedef struct Alumno {
 		strcpy(this->apMaterno, a.apMaterno);
 		strcpy(this->carrera, a.carrera);
 	}
+	
+	void update(
+		std::string nombre,
+		std::string apPaterno,
+		std::string apMaterno,
+		std::string carrera
+	) {
+		memset(this->nombre, ' ', NSIZE);
+		memset(this->apPaterno, ' ', NSIZE);
+		memset(this->apMaterno, ' ', NSIZE);
+		memset(this->carrera, ' ', MSIZE);
+		
+		strcpy(this->nombre, nombre.c_str());
+		strcpy(this->apPaterno, apPaterno.c_str());
+		strcpy(this->apMaterno, apMaterno.c_str());
+		strcpy(this->carrera, carrera.c_str());
+	}
 } Alumno;
 
 #endif

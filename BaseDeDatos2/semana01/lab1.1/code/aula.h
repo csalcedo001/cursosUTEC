@@ -8,7 +8,7 @@
 #include "alumno.h"
 
 #define FNSIZE 100 // Filename size
-#define RSIZE 52 // Register size
+#define RSIZE 51 // Register size
 
 class Aula {
 	char filename[FNSIZE + 1];
@@ -22,7 +22,7 @@ class Aula {
 		std::ifstream file(this->filename);
 		
 		file.seekg(0, std::ios::end);
-		int fileSize = file.tellg() / (RSIZE + 2);
+		int fileSize = file.tellg() / (RSIZE + 1);
 		
 		file.close();
 		
@@ -45,12 +45,7 @@ class Aula {
 			file.read(a.apPaterno, NSIZE);
 			file.read(a.apMaterno, NSIZE);
 			file.read(a.carrera, MSIZE);
-			file.seekg(2, std::ios::cur);
-		
-			deleteBackSpaces(a.nombre, NSIZE);
-			deleteBackSpaces(a.apPaterno, NSIZE);
-			deleteBackSpaces(a.apMaterno, NSIZE);
-			deleteBackSpaces(a.carrera, MSIZE);
+			file.seekg(1, std::ios::cur);
 			
 			alumnos.push_back(a);
 		} while (++pos < size);
@@ -61,7 +56,7 @@ class Aula {
 	}
 	
 	bool add(Alumno a) {
-		std::fstream file(filename);
+		std::fstream file(filename, std::ios::app);
 			
 		if (!file.is_open()) {
 			return false;
@@ -69,7 +64,16 @@ class Aula {
 		
 		// Write Alumno...
 		
-		std::cout << strlen(a.apPaterno) << std::endl;
+		setBackSpace(a.nombre, NSIZE);
+		setBackSpace(a.apPaterno, NSIZE);
+		setBackSpace(a.apMaterno, NSIZE);
+		setBackSpace(a.carrera, MSIZE);
+		
+		file.write(a.nombre, NSIZE);
+		file.write(a.apPaterno, NSIZE);
+		file.write(a.apMaterno, NSIZE);
+		file.write(a.carrera, MSIZE);
+		file.put('\n');
 		
 		file.close();
 		

@@ -11,13 +11,17 @@ int main (void) {
 	std::vector<Alumno> alumnos = aula.load();
 	
 	for (auto a : alumnos) {
-		std::cout << a.nombre << std::endl;
-		std::cout << a.apPaterno << std::endl;
-		std::cout << a.apMaterno << std::endl;
-		std::cout << a.carrera << std::endl;
+		cout << "Nombre: " << a.nombre << endl;
+		cout << "Apellido paterno: " << a.apPaterno << endl;
+		cout << "Apellido materno: " << a.apMaterno << endl;
+		cout << "Carrera: " << a.carrera << endl << endl;
 	}
 	
-	aula.add(alumnos[0]);
+	Alumno a;
+	
+	a.update("Cesar", "Salcedo", "Castillo", "Computacion");
+	
+	aula.add(a);
 	
 	return 0;
 }
