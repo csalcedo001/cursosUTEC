@@ -46,6 +46,11 @@ class Aula {
 			file.read(a.apMaterno, NSIZE);
 			file.read(a.carrera, MSIZE);
 			file.seekg(2, std::ios::cur);
+		
+			deleteBackSpaces(a.nombre, NSIZE);
+			deleteBackSpaces(a.apPaterno, NSIZE);
+			deleteBackSpaces(a.apMaterno, NSIZE);
+			deleteBackSpaces(a.carrera, MSIZE);
 			
 			alumnos.push_back(a);
 		} while (++pos < size);
