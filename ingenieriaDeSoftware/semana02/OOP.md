@@ -1,5 +1,11 @@
 #nombre Object Oriented Programming (OOP)
 
+## Three characteristics of an object
+
+* Data and operations
+* Interface and implementation
+* Send messagges between each other
+
 ## Two parts
 
 * Data: Static and immutable
