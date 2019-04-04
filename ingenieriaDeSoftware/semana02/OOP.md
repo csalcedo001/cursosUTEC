@@ -1,4 +1,4 @@
-# Object Oriented Programming (OOP)
+#nombre Object Oriented Programming (OOP)
 
 ## Two parts
 
@@ -6,4 +6,9 @@
 * Operations: Chage data
 
 _Every Object has state and data._
+
+## Java Objects
+
+* Don't have a destructor. Java has a garbage collector.
+
 
