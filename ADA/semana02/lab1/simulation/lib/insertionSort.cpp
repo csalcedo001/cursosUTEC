@@ -3,6 +3,8 @@
 
 #include <vector>
 
+#include "insertionSort.h"
+
 void insertionSort(std::vector<int>& v) {
 	// Current index of element to be sorted
 	int curIndex;
@@ -14,7 +16,7 @@ void insertionSort(std::vector<int>& v) {
 		// Current element to be sorted
 		int curElement = v[curIndex];
 
-		while (v[tarIndex] >= 0 && v[tarIndex] > curElement) {
+		while (tarIndex >= 0 && v[tarIndex] > curElement) {
 			v[tarIndex + 1] = v[tarIndex];
 			--tarIndex;
 		}
