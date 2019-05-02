@@ -13,7 +13,7 @@ Explain an IDE.
 
 ### Source code editor
 
-Allows syntax coloring, auto-completion, easy code navifation, error highlighting, and code-snippet generation.
+Allows syntax coloring, auto-completion, easy code navigation, error highlighting, and code-snippet generation.
 
 ### Compiler and/or interpreter
 
