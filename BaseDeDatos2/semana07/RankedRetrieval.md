@@ -3,7 +3,9 @@
 ## Jaccard coefficient
 
 """
+
 jaccard(A, B) = |intersection(A, B)| / |union(A, B)|
+
 """
 
 ## Term Frequency (tf)
@@ -21,6 +23,8 @@ Denotes rarity for informativity.
 ## idf weight
 
 """
+
 idf = log10(N/df)
+
 """
 
