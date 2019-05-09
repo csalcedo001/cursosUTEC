@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     45351,        946]
-NotebookOptionsPosition[     43293,        903]
-NotebookOutlinePosition[     43632,        918]
-CellTagsIndexPosition[     43589,        915]
+NotebookDataLength[     45350,        942]
+NotebookOptionsPosition[     43292,        899]
+NotebookOutlinePosition[     43631,        914]
+CellTagsIndexPosition[     43588,        911]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -618,7 +618,7 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`state$$ = 10, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`state$$ = 2, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
@@ -673,8 +673,7 @@ Cell[BoxData[
        RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
     RowBox[{"initialCell", "[", "n", "]"}], ",", "n"}], "]"}]}]], "Input",
  CellChangeTimes->{{3.765097718179563*^9, 3.765097723919091*^9}},
- CellLabel->
-  "In[196]:=",ExpressionUUID->"c3a2ab58-af76-4850-a7bd-b9838a65ba8d"],
+ CellLabel->"In[84]:=",ExpressionUUID->"c3a2ab58-af76-4850-a7bd-b9838a65ba8d"],
 
 Cell[BoxData[
  RowBox[{
@@ -702,31 +701,29 @@ Cell[BoxData[
   3.765055305161468*^9}, {3.765055686569268*^9, 3.765055724428637*^9}, {
   3.7650557682204027`*^9, 3.765055844512911*^9}, {3.765097754912952*^9, 
   3.7650977627721252`*^9}},
- CellLabel->
-  "In[200]:=",ExpressionUUID->"1a4a9804-2216-4f68-9c6f-ce53a53aba44"],
+ CellLabel->"In[85]:=",ExpressionUUID->"1a4a9804-2216-4f68-9c6f-ce53a53aba44"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"evolutiveAutomaton", "[", "6", "]"}]], "Input",
  CellChangeTimes->{{3.7650557852387857`*^9, 3.7650558321972857`*^9}},
- CellLabel->
-  "In[201]:=",ExpressionUUID->"675e2254-076b-4fd2-95d6-0bfb379a8a7a"],
+ CellLabel->"In[86]:=",ExpressionUUID->"675e2254-076b-4fd2-95d6-0bfb379a8a7a"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`state$$ = 6, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`state$$ = 1, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`state$$], 1, 6, 1}}, Typeset`size$$ = {
-    360., {177., 182.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`state$36714$$ = 0}, 
+    377., {3., 10.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`state$4959$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`state$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`state$$, $CellContext`state$36714$$, 0]}, 
+        Hold[$CellContext`state$$, $CellContext`state$4959$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -737,7 +734,7 @@ Cell[BoxData[
           $CellContext`initialCell[6], 6], $CellContext`state$$]], 
       "Specifications" :> {{$CellContext`state$$, 1, 6, 1}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{405., {222., 228.}},
+     ImageSizeCache->{422., {51., 57.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -749,9 +746,8 @@ Cell[BoxData[
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{{3.765055788115611*^9, 3.765055846779788*^9}, {
-  3.765097758108913*^9, 3.765097765508806*^9}},
- CellLabel->
-  "Out[201]=",ExpressionUUID->"5e1e4e9e-f625-4278-884b-4ce4fe5d4c43"]
+   3.765097758108913*^9, 3.765097765508806*^9}, 3.766260594594701*^9},
+ CellLabel->"Out[86]=",ExpressionUUID->"e69088e8-e258-4b9c-afda-a70cc37d9e47"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -931,26 +927,24 @@ Cell[31027, 567, 460, 10, 444, "Output",ExpressionUUID->"20f7d5fc-d5d7-46f9-9f1d
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[31524, 582, 1313, 33, 73, "Input",ExpressionUUID->"1547b6d1-25b6-42f4-b6a2-f87f88d36227"],
-Cell[32840, 617, 2280, 44, 543, "Output",ExpressionUUID->"b8cbb9f6-ee2d-465e-a9ee-29b613664cc3"]
+Cell[32840, 617, 2279, 44, 543, "Output",ExpressionUUID->"b8cbb9f6-ee2d-465e-a9ee-29b613664cc3"]
 }, Open  ]],
-Cell[35135, 664, 490, 12, 30, "Input",ExpressionUUID->"c3a2ab58-af76-4850-a7bd-b9838a65ba8d"],
-Cell[35628, 678, 1187, 27, 94, "Input",ExpressionUUID->"1a4a9804-2216-4f68-9c6f-ce53a53aba44"],
+Cell[35134, 664, 486, 11, 30, "Input",ExpressionUUID->"c3a2ab58-af76-4850-a7bd-b9838a65ba8d"],
+Cell[35623, 677, 1183, 26, 94, "Input",ExpressionUUID->"1a4a9804-2216-4f68-9c6f-ce53a53aba44"],
 Cell[CellGroupData[{
-Cell[36840, 709, 224, 4, 30, "Input",ExpressionUUID->"675e2254-076b-4fd2-95d6-0bfb379a8a7a"],
-Cell[37067, 715, 1873, 38, 469, "Output",ExpressionUUID->"5e1e4e9e-f625-4278-884b-4ce4fe5d4c43"]
+Cell[36831, 707, 220, 3, 30, "Input",ExpressionUUID->"675e2254-076b-4fd2-95d6-0bfb379a8a7a"],
+Cell[37054, 712, 1885, 37, 127, "Output",ExpressionUUID->"e69088e8-e258-4b9c-afda-a70cc37d9e47"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[38977, 758, 527, 15, 30, "Input",ExpressionUUID->"1fc29e68-c563-47ac-b249-9c91434e745a"],
-Cell[39507, 775, 2016, 71, 77, "Output",ExpressionUUID->"b85545b9-c227-4f77-8c63-34615ab44572"]
+Cell[38976, 754, 527, 15, 30, "Input",ExpressionUUID->"1fc29e68-c563-47ac-b249-9c91434e745a"],
+Cell[39506, 771, 2016, 71, 77, "Output",ExpressionUUID->"b85545b9-c227-4f77-8c63-34615ab44572"]
 }, Open  ]],
-Cell[41538, 849, 846, 25, 73, "Input",ExpressionUUID->"e6400a9d-105e-48ec-9c73-1c7d7f94c03c"],
+Cell[41537, 845, 846, 25, 73, "Input",ExpressionUUID->"e6400a9d-105e-48ec-9c73-1c7d7f94c03c"],
 Cell[CellGroupData[{
-Cell[42409, 878, 213, 4, 30, "Input",ExpressionUUID->"37fa0ca2-bfa9-41ee-8397-77b44afa0c16"],
-Cell[42625, 884, 652, 16, 34, "Output",ExpressionUUID->"1a30f7b0-8bac-4c9f-bada-25dab146ffdb"]
+Cell[42408, 874, 213, 4, 30, "Input",ExpressionUUID->"37fa0ca2-bfa9-41ee-8397-77b44afa0c16"],
+Cell[42624, 880, 652, 16, 34, "Output",ExpressionUUID->"1a30f7b0-8bac-4c9f-bada-25dab146ffdb"]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
