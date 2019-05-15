@@ -38,7 +38,7 @@ A class should have no more that just one instance.
 *Problem*: It's difficult to assure there is only one instance of that class
 *Solution*: getInstance(): If the object hasn't been created, the constructor is called; if not, the actual instance is returned.
 
-"""
+```
 getInstance() {
 	if (theOne == null) {
 		return theOne = new ClassName();
@@ -47,7 +47,7 @@ getInstance() {
 		return theOne;
 	}
 }
-"""
+```
 
 ## Abstraction Ocurrence Pattern
 
@@ -66,3 +66,25 @@ getInstance() {
 
 *Context*: Components need to access deeply into other component funcionalities.
 *Problem*: Access should be allowed without showing internal details.
+*Solution*: Class that distributes tasks.
+
+## Command Pattern
+
+*Context*: A system need to execute different commands.
+*Problem*: Commands are executed without knowing their types.
+*Solution*: Create a Concrete class and a Receiver class. Let the receiver identify the types.
+
+## Observer pattern
+
+*Context*:
+*Problem*: 
+
+## Model View Controller
+
+*Context*: 
+*Problem*: High coupling. Many interconections between components.
+*Solution*: Separate data, view and control logic.
+
+* View: UI
+* Controller: Detects UI Events.
+* Model: 

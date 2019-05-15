@@ -29,3 +29,8 @@ idf = log10(N/df)
 ```
 w = log(1 + tf) x log(N / df)
 ```
+
+## Proximity
+
+* Euclidean distance: May show problems.
+* Angular distance: Better solution. Cosine distance
